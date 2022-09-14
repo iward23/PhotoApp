@@ -8,7 +8,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var textField: UITextField!
+    
+    @IBOutlet weak var greetLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
