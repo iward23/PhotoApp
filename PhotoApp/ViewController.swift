@@ -9,7 +9,6 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
-    
     @IBOutlet weak var greetLabel: UILabel!
     
     override func viewDidLoad() {
@@ -17,6 +16,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func greetButton(_ sender: Any) {
+        greetLabel.text = "Hello" + textField.text!
+    }
+    
 }
 
